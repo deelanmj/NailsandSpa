@@ -1,0 +1,19 @@
+{
+  "name": "nailsand-wellness-spa",
+  "description": "Official website for Nailsand Wellness and Spa",
+  "main": "index.js",
+  "authors": [
+    "Dee Jorillo",
+    "Xe Pueblos"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/deelanmj/NailsandSpa",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

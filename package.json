@@ -1,0 +1,25 @@
+{
+  "name": "nailsand-wellness-spa",
+  "version": "1.0.0",
+  "description": "Official website for Nailsand Wellness and Spa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deelanmj/NailsandSpa.git"
+  },
+  "author": "Dee Jorillo, Xe Pueblos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deelanmj/NailsandSpa/issues"
+  },
+  "homepage": "https://github.com/deelanmj/NailsandSpa#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "bower": "^1.8.4",
+    "flexboxgrid": "^6.3.1",
+    "ui-router": "^1.0.0-alpha.3"
+  }
+}
