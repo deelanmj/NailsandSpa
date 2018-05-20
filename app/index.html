@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" media="all" href="../bower_components/flexboxgrid/css/index.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../bower_components/flexboxgrid/css/index.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="styles/index.css" />
     
     <!-- Javascript -->
-    <script src="../bower_components/angular/angular.js" />
+    <script src="../bower_components/angular/angular.min.js" />
     <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"
     <script src="./index.js" />
     <script src="pages/home/home.js" />
@@ -20,12 +20,19 @@
     <!-- Navigation bar will go here -->
     <div class="menu-container">
         <div class="menu">
-            <div class="home">Home</div>
-            <div class="services">Services</div>
-            <div class="gallery">Gallery</div>
-            <div class="about">About</div>
+            <a class="menu-link" href="#home">Home</a>
+            <a class="menu-link" href="#services">Services</a>
+            <a class="menu-link" href="#gallery">Gallery</a>
+            <a class="menu-link" href="#about">About</a>
         </div>
     </div>
+
+    <div class="page-logo" name="home"></div>
+    <div class="services" name="services">
+        <div class="divider"></div>
+    </div>
+    <div class="gallery" name="gallery"></div>
+    <div class="about-us" name="about"></div>
 
     <!-- Main pages will go here-->
     <div ui-view></div>
