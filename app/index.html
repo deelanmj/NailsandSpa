@@ -10,29 +10,44 @@
     <link rel="stylesheet" type="text/css" media="all" href="styles/index.css" />
     
     <!-- Javascript -->
-    <script src="../bower_components/angular/angular.min.js" />
-    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"
-    <script src="./index.js" />
-    <script src="pages/home/home.js" />
-    <script src="pages/home/home.controller.js" />
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.js"></script>
+    <script src="./index.js"></script>
+    <script src="pages/home/home.js"></script>
+    <script src="pages/home/home.controller.js"></script>
 </head>
 <body ng-app="main-app">
     <!-- Navigation bar will go here -->
     <div class="menu-container">
         <div class="menu">
-            <a class="menu-link" href="#home">Home</a>
-            <a class="menu-link" href="#services">Services</a>
-            <a class="menu-link" href="#gallery">Gallery</a>
-            <a class="menu-link" href="#about">About</a>
+            <a class="menu-link" href="#home" du-smooth-scroll duration="2000">Home</a>
+            <a class="menu-link" href="#services" du-smooth-scroll duration="2000">Services</a>
+            <a class="menu-link" href="#gallery" du-smooth-scroll duration="2000">Gallery</a>
+            <a class="menu-link" href="#about" du-smooth-scroll duration="2000">About</a>
         </div>
     </div>
 
-    <div class="page-logo" name="home"></div>
-    <div class="services" name="services">
-        <div class="divider"></div>
+    <div class="page-logo" id="home"></div>
+
+    <div class="services" id="services">
+        <div class="divider">
+            <div class="div-label div-label-text container-flex">Our Services</div>
+        </div>
     </div>
-    <div class="gallery" name="gallery"></div>
-    <div class="about-us" name="about"></div>
+
+    <div class="gallery" id="gallery">
+        <div class="divider">
+            <div class="div-label div-label-text container-flex">Gallery</div>
+        </div>
+    </div>
+
+    <div class="about-us" id="about">
+        <div class="divider">
+            <div class="div-label div-label-text container-flex">About Us</div>
+        </div>
+    </div>
 
     <!-- Main pages will go here-->
     <div ui-view></div>

@@ -1,7 +1,5 @@
 (function () {
-    alert('index loaded');
-    
-    var app = angular.module('main-app', [ui-router]);
+    var app = angular.module('main-app', ['ui-router', 'duScroll']);
     
     app.config(function($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('/home');
