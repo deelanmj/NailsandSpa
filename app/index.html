@@ -14,6 +14,7 @@
     <script src="../bower_components/angular/angular.min.js"></script>
     <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.min.js"></script>
     <script src="./index.js"></script>
     <script src="pages/home/home.js"></script>
     <script src="pages/home/home.controller.js"></script>
@@ -29,23 +30,43 @@
         </div>
     </div>
 
-    <div class="page-logo" id="home"></div>
+    <div class="overlay">
+        <img src="images/logo-crop01.png" class="shop-logo" />
+    </div>
+    <div class="home-image" id="home"></div>
 
-    <div class="services" id="services">
+    <div id="services"></div>
+    <div class="services">
         <div class="divider">
-            <div class="div-label div-label-text container-flex">Our Services</div>
+            <div class="divider-line">
+                <span class="span-label-text">Our Services</span>
+            </div>
+        </div>
+        <div class="container-inline-flex">
+            <div class="services-image">
+                <img class="svc-img" src="images/home/candle-spa-2.jpg" alt="spa with candles" />
+            </div>
+            <div class="services-description">
+                <label class="header">What do we offer?</label>
+                <div class="services-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elit velit, ultrices eget faucibus ut, lacinia eget purus. Suspendisse imperdiet nulla auctor purus sodales, ac volutpat lorem bibendum. In sit amet porta libero. Nulla id magna id ante sodales efficitur. Praesent gravida, risus consectetur faucibus volutpat, orci urna consectetur massa, non maximus metus dui vitae velit. Nam finibus porttitor neque, sit amet vestibulum eros laoreet ut. Praesent ac nibh justo. Nullam at pharetra odio, in dignissim nunc. Nullam tincidunt sapien mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Nulla tristique massa a mollis scelerisque. Etiam ultrices, nisl id placerat molestie, ligula odio commodo mauris, at finibus enim ligula sed dolor. Phasellus id dolor vitae lorem ultrices tincidunt vel at sapien. In magna leo, faucibus faucibus purus ut, lobortis varius ligula. 
+                </div>
         </div>
     </div>
 
     <div class="gallery" id="gallery">
         <div class="divider">
-            <div class="div-label div-label-text container-flex">Gallery</div>
+            <div class="divider-line">
+                <span class="span-label-text">Gallery</span>
+            </div>
         </div>
     </div>
 
     <div class="about-us" id="about">
         <div class="divider">
-            <div class="div-label div-label-text container-flex">About Us</div>
+            <div class="divider-line">
+                <span class="span-label-text">About Us</span>
+            </div>
         </div>
     </div>
 

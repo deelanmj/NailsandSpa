@@ -1,5 +1,6 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const imagemin = require('gulp-imagemin');
 
 gulp.task('default', function(){
     browserSync.init({
@@ -8,6 +9,10 @@ gulp.task('default', function(){
         }
     });
 
-    gulp.watch('./app/styles/*.css');
+    gulp.src('./app/images/**/*.jpg')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'));
+
+    gulp.watch('./app/styles/*.css').on('change', browserSync.reload);
     gulp.watch('./app/index.html').on('change', browserSync.reload);
 });
