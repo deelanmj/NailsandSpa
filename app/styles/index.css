@@ -1,4 +1,10 @@
-* {
+@font-face {
+  font-family: lobster-regular;
+  src: url('../fonts/lobster.regular.ttf');
+}
+
+* 
+  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +12,37 @@
 
   body, html {
     height: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    display: block;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 2;
+  }
+
+  .home-image {
+    width: 100%;
+    height:100%;
+    z-index: 1;
+    display: flex;
+    display: -webkit-flex;
+    background-image: url('../images/home/candle-spa.jpg');
+    background-attachment: fixed;
+    background-position: 0% 79%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0%;
+  }
+
+  .shop-logo {
+    display: block;
+    z-index: 3;
+    margin:auto;
+    margin-top: 11%;
+    width: 70%;
   }
 
   .menu-container {
@@ -16,48 +53,65 @@
     justify-content: center;
     position: fixed;
     width: 100%;
+    position: absolute;
+    z-index: 100;
   }
   
   .menu {
     width: 900px;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
   }
 
   .container-flex {
     display: flex;
+    display: -webkit-inline-flex;
   }
 
-  .div-label-text {
-    font-size: 20px;
-      font-family: Arial, Helvetica, sans-serif;
-      text-decoration: none;
-      color: azure;
-      line-height: 30px;
+  .container-inline-flex {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+  }
+
+  .divider-line {
+    background-color: #059DAB;
+    width: 327px;
+    height:63px;
+    line-height: 64px;
+    font-size: 32px;
+    margin: auto;
+  }
+
+  .span-label-text {
+    font-size: 40px;
+    font-family: lobster-regular;
+    text-decoration: none;
+    color: azure;
+    text-align: center;
+    display: inline-block;
+    width: 97%;
   }
 
   .menu a {
-      font-size: 20px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      font-family: lobster-regular;
       text-decoration: none;
       color: azure;
       line-height: 30px;
   }
 
-  .page-logo {
-    background-image: url('/images/logo.png');
-    height: 100%;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: 0% 79%;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .header {
+    font-family: lobster-regular;
+    font-weight: bold;
+    font-size:30px;
   }
 
+  /* SERVICES */
   .services {
     width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: #FFF8FE;
   }
 
   .services .divider {
@@ -65,16 +119,36 @@
       background-color: #059DAB;
   }
 
-  .services .divider .div-label {
-    background-color: #059DAB;
-    width: 327px;
-    margin: auto;
-    height:63px;
-    text-align: center;
-    line-height: 64px;
-    font-size: 32px;
+  .services-image {
+    width: 400px;
+    margin-top:91px;
+    margin-bottom: 63px;
+    margin-left: 170px;
+    flex-shrink: 1;
   }
 
+  .svc-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .services-description {
+    width: 900px;
+    margin-top: 91px;
+    margin-left: 58px;
+    margin-bottom: 63px;
+    /* border: 1px dashed black; */
+    flex-shrink: 1;
+  }
+
+  .services-text {
+    margin-top: 10px;
+    width: 600px;
+  }
+
+
+
+  /* GALLERY */
   .gallery {
     width: 100%;
     height: 100%;
@@ -84,16 +158,6 @@
   .gallery .divider {
     height: 10px;
     background-color: #059DAB;
-  }
-
-  .gallery .divider .div-label {
-    background-color: #059DAB;
-    width: 327px;
-    margin: auto;
-    height:63px;
-    text-align: center;
-    line-height: 64px;
-    font-size: 32px;
   }
 
   .about-us {
@@ -107,14 +171,6 @@
     background-color: #059DAB;
   }
 
-  .about-us .divider .div-label {
-    background-color: #059DAB;
-    width: 327px;
-    margin: auto;
-    height:63px;
-    text-align: center;
-    line-height: 64px;
-    font-size: 32px;
-  }
+ 
 
   
